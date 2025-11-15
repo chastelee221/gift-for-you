@@ -1,0 +1,124 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <style>
+                @keyframes moveImage{
+            0%{left:0;}
+            50%{left:20%;}
+            100%{left:0;}
+            }
+            img{
+                position: relative;
+                width: 100px; height: 100px;
+                animation: moveImage 10s linear infinite; border-radius: 60px; border: 80px;
+            }
+            
+            .head{background-color: navy;color: white;text-align: center;border-radius: 10px;padding: 10px;margin: 10px;}
+                .but{display: flexbox;text-align: center;}
+            .contact{background-color: rgb(91, 5, 172);color: white;border-radius: 10px;padding: 15px;margin: 10px;}
+            .selfintro{background-color: rgb(119, 116, 111);border-radius: 10px;color: white;padding: 10px; margin: 10px;}
+            
+            nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: rgb(221, 18, 18);
+      text-decoration: none;
+      font-weight: bold; padding: 20px; background-color: darkgoldenrod; border-radius: 15px;
+      margin: 10px;
+    }
+
+    nav a:hover {
+      text-decoration:underline;
+    }
+
+    /* Hamburger menu icon */
+    .menu-icon {
+      display: none;
+      font-size: 1.8em;
+      cursor: pointer;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        background-color: #003366;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+    }
+ 
+
+            </style>
+</head>
+
+
+            
+<body>
+    
+    <img src="C:\Users\User\Desktop\PEM Presentation\logo\Nrsing-pics-1.jpg" alt="myLogo" >
+            
+    
+       <div class="menu-icon" onclick="toggleMenu()">☰</div>
+          <nav id="navMenu">
+      <a href="#">Home</a> <br>
+      <a href="#">About</a> <br>
+      <a href="#">contact</a> <br>
+      <a href="#">Email</a> <br>
+      <a href="#">suggestion/support</a> <br>
+    </nav>   
+    
+</div>       <header class="head">
+       <h1>Welcome to Moses Daniel's mimi webpage</h1>
+       <h3>(A student nurse, web developer & cybersecurity enthusiast)</h3>
+        </header>
+    
+    <div class="selfintro"><p>
+    Hello! My name is Moses Daniel Christopher. I'm a student nurse passionate  about improving patient care and developing webpage,
+    inclding involvement in cybersecurity programm.
+    <p>This page is my irst launched personal webpage, a space where i'll share my journey, project and learning progress</p></div>
+
+
+               <div class="contact"><h3>contact me </h3>
+                <p>Email: chastelee2020@gmail.com</p></div>
+    </p>
+
+        <aside>
+
+        <a href="love.html">open here</a>
+
+        </aside>
+     
+                        <script>
+                            function toggleMenu() {
+      document.getElementById('navMenu').classList.toggle('active');
+    }
+
+                        </script>
+
+
+
+
+
+
+
+
+</body>
+</html>
